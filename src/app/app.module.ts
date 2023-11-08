@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { DialogDetailsComponent } from './Dialogs/dialog-details/dialog-details.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 //Material Icons
 import {MatIconModule} from '@angular/material/icon';
@@ -25,12 +26,14 @@ import {MatIconModule} from '@angular/material/icon';
 //Material Modals
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { DialogDetailsCharacterComponent } from './Dialogs/dialog-details-character/dialog-details-character.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogDetailsComponent
+    DialogDetailsComponent,
+    DialogDetailsCharacterComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSnackBarModule,
     MatIconModule,
     MatDialogModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
